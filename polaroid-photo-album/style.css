@@ -1,0 +1,55 @@
+:root {
+	/*========== Colors ==========*/
+	/*Blue and pink gradient*/
+	--body-color: linear-gradient(80deg, #1b2f55 0%, #eb959e 100%);
+
+	--body-font: 'Poppins', sans-serif;
+	--font-size: 2rem;
+}
+
+body {
+	background: var(--body-color);
+}
+
+#polaroidGallery
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 150px;
+	height: 150px;
+}
+.polaroid
+{	
+	background-color: white;	
+	padding: 0.5vw;
+	padding-bottom: 1.0vw;
+	background: #ece9e6;
+	background: -webkit-linear-gradient(to right, #ece9e6, #fafafa);
+	background: linear-gradient(to bottom, #ece9e6, #fafafa);
+	position: absolute;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+	transition: all 0.5s ease;
+}
+.polaroid:hover
+{
+	cursor: pointer;
+}
+
+#polaroidGallery img
+{
+	width: 120px;
+	background-size: cover;
+	align-items: center;
+}
+
+h1
+{
+  color: white;
+  position: absolute;
+  top: 2vw;
+  left: 9vw;
+  bottom: 5vw;
+  font-family: var(--body-font);
+  font-weight: bold;
+  font-size: var(--font-size);
+}
